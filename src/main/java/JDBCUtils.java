@@ -13,7 +13,7 @@ public class JDBCUtils {
     //database baglanma methodu==> connection return eder.
     public static Connection connectToDataBase() {  // bu sadece lokal'e baglaniyor.
         try {
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "151761ok");
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "****");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -23,7 +23,7 @@ public class JDBCUtils {
 
     public static Connection connectToMedunnaDataBase() {// Medunna database'ina baglandik
         try {
-            connection = DriverManager.getConnection("jdbc:postgresql://medunna.com:5432/medunna_db_v2", "select_user", "Medunna_pass_@6");
+            connection = DriverManager.getConnection("jdbc:postgresql://medunna.com:5432/medunna_db_v2", "select_user", "****");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
